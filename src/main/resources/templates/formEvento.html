@@ -9,32 +9,28 @@
 <body>
 	<h1>Adicionar Evento</h1>
 
-	<form action="">
-
+	<form action="/salvar-com-objeto" method="post">
+		<div>
+			<label>Nome:</label>
+			<input type="text" name="nome">
+		</div>
+		<div>
+			<label>Local:</label>
+			<input type="text" name="local">
+		</div>
+		<div>
+			<label>Data:</label>
+			<input type="text" name="data">
+		</div>
+		<div>
+			<label>Horário:</label>
+			<input type="text" name="horario">
+		</div>
+		<div>
+			<button type="submit">Salvar</button>
+			<button type="reset">Limpar</button>
+		</div>
 	</form>
-
-	<div>
-		<label>Nome:</label>
-		<input type="text" name="nome">
-	</div>
-	<div>
-		<label>Local:</label>
-		<input type="text" name="local">
-	</div>
-	<div>
-		<label>Data:</label>
-		<input type="text" name="data">
-	</div>
-	<div>
-		<label>Horário:</label>
-		<input type="text" name="horario">
-	</div>
-	<div>
-		<button type="submit">Salvar</button>
-		<button type="reset">Limpar</button>
-	</div>
-
-
 </body>
 
 </html>
