@@ -5,7 +5,11 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
+<<<<<<< HEAD
 		<version>3.5.6</version>
+=======
+		<version>3.5.5</version>
+>>>>>>> c7c04a3920bce8bc021381d9cc5c9bedda7e21a3
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>ifrn.pi</groupId>
