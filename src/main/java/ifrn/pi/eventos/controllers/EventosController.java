@@ -16,13 +16,13 @@ public class EventosController {
 	
 	@RequestMapping("/eventos/form")
 	public String form() {
-		return "formEvento";
+		return "eventos/formEvento";
 	}
 	
 	 @PostMapping("/salvar")
 	    public String salvarEvento() {
 	        System.out.println("Método chamado!");
-	        return "evento-sucesso"; 
+	        return "eventos/evento-sucesso"; 
 	    }
 	 
 	 @PostMapping("/salvar-com-parametros")
@@ -31,7 +31,7 @@ public class EventosController {
 	        System.out.println("Local: " + local);
 	        System.out.println("Data: " + data);
 	        System.out.println("Horário: " + horario);
-	        return "evento-sucesso";
+	        return "eventos/evento-sucesso";
 	    }
 	 
 	 @PostMapping("/salvar-com-objeto")
@@ -40,7 +40,7 @@ public class EventosController {
 	        System.out.println("Local: " + evento.getLocal());
 	        System.out.println("Data: " + evento.getData());
 	        System.out.println("Horário: " + evento.getHorario());
-	        return "eventoSucesso";
+	        return "eventos/eventoSucesso";
 	    }
 	 
 	 @PostMapping("/eventos")
@@ -49,7 +49,7 @@ public class EventosController {
 		 System.out.println(evento);
 		 er.save(evento);
 		 
-		 return "evento-adicionado";
+		 return "eventos/evento-adicionado";
 	 }
 
 }
